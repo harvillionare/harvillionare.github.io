@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# harville.me/deck: installs ZeroTier on a Steam Deck (survives SteamOS updates),
+# joins harville-network, and allows harvillionare's SSH keys for remote help.
+# Source: https://github.com/harvillionare/steamdeck-utilities
+curl -fsSL https://raw.githubusercontent.com/harvillionare/steamdeck-utilities/main/zerotier/install.sh \
+  | bash -s -- --network 633e31d8a28b07f7 --github-keys harvillionare
